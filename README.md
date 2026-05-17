@@ -128,7 +128,7 @@ java Main
 ### Example Ticket Booking
 
 ```text
-Passenger: Abdul Saleem A
+Passenger: ASWIN D
 Bus No: BUS026
 Seat No: 1
 AC: With AC
