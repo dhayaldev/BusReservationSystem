@@ -1,129 +1,151 @@
-# BusReservationSystem
-A Java console-based Bus Reservation System with txt storage, preloaded with 25 buses, supporting booking, cancellation, and file persistence.
+# 🚌 Bus Reservation System
 
-# Bus Reservation System (Java)
-# Introduction
+A Java console-based Bus Reservation System with text file storage, preloaded bus data, ticket booking, cancellation functionality, and persistent data management.
 
-The Bus Reservation System is a Java console-based application that allows users to book and cancel tickets, while administrators can add buses with password protection. It demonstrates the use of OOP concepts, file handling, and collections in Java. The system also supports data persistence using text files.
+---
 
-# Features
+# 📖 Introduction
 
-> Admin password protection for adding buses
+The Bus Reservation System is a Java console-based application developed to automate bus ticket booking and management operations. The system allows users to view available buses, reserve tickets, cancel bookings, and manage passenger details efficiently.
 
-> Add, view, and manage buses
+The application also includes an admin module with password protection for adding and managing buses. Data persistence is implemented using text file storage, ensuring that booking and bus information are retained even after the application is closed.
 
-> Book tickets with automatic seat allocation
+This project demonstrates practical implementation of Java programming concepts including Object-Oriented Programming (OOP), Collections Framework, File Handling, Exception Handling, and Modular Programming.
 
-> Cancel tickets easily
+---
 
-> Save and load data using text files
+# ✨ Features
 
-# Project Structure
+- Admin password protection for adding buses
+- Add and manage bus details
+- View all available buses
+- Ticket booking with automatic seat allocation
+- Ticket cancellation functionality
+- Persistent data storage using TXT files
+- Preloaded with 25 buses
+- User-friendly console-based interface
+- Real-time seat availability tracking
 
-Main.java – Entry point of the program (menu-driven system)
+---
 
-Bus.java – Defines the bus object with attributes and methods
+# 🛠️ Technologies Used
 
-BusReservationManager.java – Handles bus list, booking, and cancellations
+- Java (Core Java)
+- Object-Oriented Programming (OOP)
+- Java Collections Framework
+- File Handling (TXT/CSV)
+- Scanner Class for User Input
+- Exception Handling
 
-buses.txt – Stores bus data (25 buses preloaded)
+---
 
-# Sample Execution
+# 🗂️ Project Structure
+
+```bash
+BusReservationSystem/
+│
+├── Main.java
+├── Bus.java
+├── BusReservationManager.java
+├── buses.txt
+└── README.md
+```
+
+### File Description
+
+- `Main.java` – Entry point of the application with menu-driven system
+- `Bus.java` – Defines bus objects, attributes, and methods
+- `BusReservationManager.java` – Handles booking, cancellation, and bus management operations
+- `buses.txt` – Stores bus data with preloaded bus information
+
+---
+
+# ⚙️ How to Run the Project
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/dhayaldev/BusReservationSystem.git
+```
+
+### 2️⃣ Open Project
+
+Open the project using:
+- Eclipse
+- IntelliJ IDEA
+- VS Code
+
+### 3️⃣ Compile the Program
+
+```bash
+javac *.java
+```
+
+### 4️⃣ Run the Application
+
+```bash
+java Main
+```
+
+---
+
+# 🧠 Concepts Implemented
+
+- Object-Oriented Programming (OOP)
+- Java Collections
+- File Handling
+- CRUD Operations
+- Exception Handling
+- Menu-Driven Console Application
+- Data Persistence
+- Modular Programming
+
+---
+
+# 📌 Future Enhancements
+
+- Database integration using MySQL
+- User authentication and authorization
+- Online payment gateway integration
+- GUI development using JavaFX or Swing
+- REST API integration using Spring Boot
+- Web-based frontend using React
+- Email/SMS ticket confirmation system
+
+---
+
+# 📷 Sample Execution
+
+```text
 === BUS RESERVATION SYSTEM ===
 1. Add Bus (Admin only)
 2. Show All Buses
 3. Book Ticket
 4. Cancel Ticket
 5. Save & Exit
-Enter choice: 1
-Enter Admin Password: CodeWithAbdulSaleem
-Enter Bus Number: BUS026
-Enter Capacity: 40
-Bus added successfully!
+```
 
-=== BUS RESERVATION SYSTEM ===
-1. Add Bus (Admin only)
-2. Show All Buses
-3. Book Ticket
-4. Cancel Ticket
-5. Save & Exit
-Enter choice: 2
-Bus No: BUS001 | Capacity: 40 | Booked: 12 | Available seats : 28 | AC : With AC
-Bus No: BUS002 | Capacity: 35 | Booked: 34 | Available seats : 1 | AC : Without AC
-Bus No: BUS003 | Capacity: 40 | Booked: 25 | Available seats : 15 | AC : With AC
-Bus No: BUS004 | Capacity: 40 | Booked: 23 | Available seats : 17 | AC : With AC
-Bus No: BUS005 | Capacity: 30 | Booked: 26 | Available seats : 4 | AC : Without AC
-Bus No: BUS006 | Capacity: 40 | Booked: 38 | Available seats : 2 | AC : With AC
-Bus No: BUS007 | Capacity: 25 | Booked: 20 | Available seats : 5 | AC : Without AC
-Bus No: BUS008 | Capacity: 40 | Booked: 0 | Available seats : 40 | AC : With AC
-Bus No: BUS009 | Capacity: 40 | Booked: 0 | Available seats : 40 | AC : With AC
-Bus No: BUS010 | Capacity: 38 | Booked: 0 | Available seats : 38 | AC : Without AC
-Bus No: BUS011 | Capacity: 42 | Booked: 0 | Available seats : 42 | AC : Without AC
-Bus No: BUS012 | Capacity: 40 | Booked: 0 | Available seats : 40 | AC : With AC
-Bus No: BUS013 | Capacity: 36 | Booked: 0 | Available seats : 36 | AC : Without AC
-Bus No: BUS014 | Capacity: 40 | Booked: 0 | Available seats : 40 | AC : With AC
-Bus No: BUS015 | Capacity: 28 | Booked: 0 | Available seats : 28 | AC : Without AC
-Bus No: BUS016 | Capacity: 33 | Booked: 0 | Available seats : 33 | AC : Without AC
-Bus No: BUS017 | Capacity: 40 | Booked: 0 | Available seats : 40 | AC : With AC
-Bus No: BUS018 | Capacity: 39 | Booked: 0 | Available seats : 39 | AC : Without AC
-Bus No: BUS019 | Capacity: 30 | Booked: 0 | Available seats : 30 | AC : Without AC
-Bus No: BUS020 | Capacity: 40 | Booked: 0 | Available seats : 40 | AC : With AC
-Bus No: BUS021 | Capacity: 35 | Booked: 0 | Available seats : 35 | AC : Without AC
-Bus No: BUS022 | Capacity: 35 | Booked: 0 | Available seats : 35 | AC : Without AC
-Bus No: BUS023 | Capacity: 40 | Booked: 0 | Available seats : 40 | AC : With AC
-Bus No: BUS024 | Capacity: 32 | Booked: 0 | Available seats : 32 | AC : Without AC
-Bus No: BUS025 | Capacity: 40 | Booked: 0 | Available seats : 40 | AC : With AC
-Bus No: BUS026 | Capacity: 40 | Booked: 0 | Available seats : 40 | AC : With AC
+### Example Ticket Booking
 
-=== BUS RESERVATION SYSTEM ===
-1. Add Bus (Admin only)
-2. Show All Buses
-3. Book Ticket
-4. Cancel Ticket
-5. Save & Exit
-Enter choice: 3
-Enter Passenger Name: Abdul Saleem A
-Enter Bus Number: BUS026
-Ticked is Booked Sucessfully.
-----------------------------
+```text
 Passenger: Abdul Saleem A
-Bus No:    BUS026
-Capacity:   40
+Bus No: BUS026
 Seat No: 1
 AC: With AC
-----------------------------
+```
 
-=== BUS RESERVATION SYSTEM ===
-1. Add Bus (Admin only)
-2. Show All Buses
-3. Book Ticket
-4. Cancel Ticket
-5. Save & Exit
-Enter choice: 4
-Enter Bus Number: BUS004
-Ticket is Cancelled Sucessfully.
+---
 
-=== BUS RESERVATION SYSTEM ===
-1. Add Bus (Admin only)
-2. Show All Buses
-3. Book Ticket
-4. Cancel Ticket
-5. Save & Exit
-Enter choice: 5 
-Data saved.
+# ⭐ Demo / Working Prototype
 
-# Technologies Used
-Java (Core, Collections, OOP)
-File Handling (TXT/CSV)
-Scanner Class for user input
-How to Run
-Clone or download the project files.
-Open terminal/command prompt and navigate to the project folder.
+GitHub Repository:
+https://github.com/dhayaldev/BusReservationSystem
 
-# Compile and run:
-javac *.java
-java Main
+---
 
-# Author
+# 👨‍💻 Author
 
-Aswin Dhayal S
+**Aswin Dhayal S**
+
+- GitHub: https://github.com/dhayaldev
+- LinkedIn: https://www.linkedin.com/in/aswin-dhayal-s
